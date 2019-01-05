@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="toTop" content="true">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="font/demo.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<section id="register_box">
+	<div class="header1"><i class="icon iconfont icon-zuojiantou daileft"></i>发布求购</div>
+	<div class="hehight"></div>
+	<div class="thisqiu">
+		<div class="qiutit">求购车辆信息</div>
+		<div class="qiucon1">车型<span>请选择车型<i class="icon iconfont icon-youjiantou"></i></span></div>
+		<div class="qiucon1">年限<span>请选择年限范围<i class="icon iconfont icon-youjiantou"></i></span></div>
+		<div class="qiucon1">颜色<span>请选择颜色<i class="icon iconfont icon-youjiantou"></i></span></div>
+	</div>
+	<div class="thisqiu">
+		<div class="qiutit">买车人信息</div>
+		<div class="qiucon1">客户姓名<input type="text" placeholder="请输入客户姓名"/></div>
+		<div class="qiucon1">客户电话<input type="text" placeholder="请输入客户电话"/></div>
+	</div>
+	<div class="qiutit">备注</div>
+	<textarea class="qiutext" placeholder="请描述客户需求"></textarea>
+	<div class="qiutit">悬赏急求</div>
+	<div class="xuanshang"><a class="xuan1">不悬赏</a><a class="xuan2">悬赏2多币</a></div>
+	<div class="qiutit"></div>
+	<div class="xfabu"><a>发布求购</a></div>
+	<!--弹出-->
+	<div class="half"></div>
+  	<div class="dialog">
+	    <p class="tantit1">提示<i class="icon iconfont icon-cuowu guanbi"></i></p>
+	    <p class="tancon1">由于多币不足，无法发布悬赏急求！ 请选择普通发布！ </p>
+	    <p class="putong"><a href="">普通发布</a></p>
+  	</div>
+   <script type="text/javascript">
+	$(function(){
+		  $(".xfabu").click(function(){
+	      $(".dialog").show();
+		  $(".half").show().css("height",$(document).height());	 
+	      })   
+	      $(".guanbi").click(function(){$(".dialog").hide();$(".half").hide();});   
+	})
+	</script>
+	<!--弹出-->
+</section>
+</body>
+</html>

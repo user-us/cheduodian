@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="toTop" content="true">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="font/demo.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+	<div class="personal_topbar">
+		<div class="container">
+			<div class="left_arrow">
+				<img src="images/left_arrow.png">
+			</div>
+			<div class="title">变速箱</div>
+			<div class="right_arrow"></div>
+		</div>
+	</div>
+	<div class="biansuxiang">
+		<div class="title">全部</div>
+		<div class="biansu_item active"><label class="label1">不限</label><img src="images/bss.png"></div>
+		<div class="title">变速箱</div>
+		<div class="biansu_item"><label class="label1">手动</label><img src="images/bss.png"></div>
+		<div class="biansu_item"><label class="label1">自动</label><img src="images/bss.png"></div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".biansu_item").click(function(){
+				$(".biansu_item").removeClass("active");
+				$(this).addClass("active");
+			})
+		})
+	</script>
+</body>
+</html>

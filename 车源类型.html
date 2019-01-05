@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="toTop" content="true">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="font/demo.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+	<div class="personal_topbar">
+		<div class="container">
+			<div class="left_arrow">
+				<img src="images/left_arrow.png">
+			</div>
+			<div class="title">车源类型</div>
+			<div class="right_arrow"><label>确定</label></div>
+		</div>
+	</div>
+	<div class="car_color_content boxbg cheyuanliex">
+		<div class="title">全部</div>
+		<ul class="color_list">
+			<li>
+				<span class="radioDefault"></span>
+				<span class="text">不限</span>
+			</li>
+		</ul>
+		<div class="title">车源类型</div>
+		<ul class="color_list">
+			<li>
+				<span class="radioDefault"></span>
+				<span class="text">可调度车源</span>
+			</li>
+			<li>
+				<span class="radioDefault"></span>
+				<span class="text">急售车源</span>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".car_color_content .color_list li").click(function(){
+				$(".car_color_content .color_list li").removeClass("active");
+				$(this).addClass("active");
+			})
+		})
+	</script>
+</body>
+</html>

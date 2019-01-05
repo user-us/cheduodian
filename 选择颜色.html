@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="toTop" content="true">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="font/demo.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+	<div class="personal_topbar">
+		<div class="container">
+			<div class="left_arrow">
+				<img src="images/left_arrow.png">
+			</div>
+			<div class="title">颜色</div>
+			<div class="right_arrow"><label>确定</label></div>
+		</div>
+	</div>
+	<div class="car_color_content">
+		<div class="title">颜色</div>
+		<ul class="color_list">
+			<li>
+				<span class="radioDefault"></span>
+				<span class="text">黑色</span>
+				<span class="color" style="background: #000000;"></span>
+			</li>
+			<li>
+				<span class="radioDefault"></span>
+				<span class="text">白色</span>
+				<span class="color" style="background: #ffffff;"></span>
+			</li>
+			<li>
+				<span class="radioDefault"></span>
+				<span class="text">灰色</span>
+				<span class="color" style="background: #C0C0C0;"></span>
+			</li>
+			<li>
+				<span class="radioDefault"></span>
+				<span class="text">红色</span>
+				<span class="color" style="background: #CF1F26;"></span>
+			</li>
+			<li>
+				<span class="radioDefault"></span>
+				<span class="text">蓝色</span>
+				<span class="color" style="background: #396AB8;"></span>
+			</li>
+			<li>
+				<span class="radioDefault"></span>
+				<span class="text">绿色</span>
+				<span class="color" style="background: #98CA67;"></span>
+			</li>
+			<li>
+				<span class="radioDefault"></span>
+				<span class="text">黄色</span>
+				<span class="color" style="background: #FDE004;"></span>
+			</li>
+			<li>
+				<span class="radioDefault"></span>
+				<span class="text">香槟色</span>
+				<span class="color" style="background: #E7D3AE;"></span>
+			</li>
+			<li>
+				<span class="radioDefault"></span>
+				<span class="text">银色</span>
+				<span class="color" style="background: #F0ECEB;"></span>
+			</li>
+			<li>
+				<span class="radioDefault"></span>
+				<span class="text">其他</span>
+			</li>
+			
+		</ul>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".car_color_content .color_list li").click(function(){
+				$(".car_color_content .color_list li").removeClass("active");
+				$(this).addClass("active");
+			})
+		})
+	</script>
+</body>
+</html>

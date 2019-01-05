@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="toTop" content="true">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="font/demo.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script src="js/datePicker.js"></script>
+</head>
+<body>
+<section id="register_box">
+	<div class="header1"><i class="icon iconfont icon-zuojiantou daileft"></i>发布车辆<a href="" class="dai1">发布</a></div>
+	<div class="hehight"></div>
+	<div class="fabui"><img src="images/findbg.png" class="faimg1"/><div class="fadiv"><img src="images/xiangji.png"/></div></div>
+	<div class="thisqiu">
+		<div class="qiutit">基本信息</div>
+		<div class="waijian faxian">
+			<p class="weibotime">VIN码<span class="shuvin"><input type="text" placeholder="输入VIN码或选择图片识别"/><img src="images/xiangji1.png" class="xiangji1"/></span></p> 
+			<p class="weibotime">品牌型号<span class="shuvin">奥迪A6L<i class="icon iconfont icon-youjiantou"></i></span></p>
+			<p class="weibotime">车身颜色<span class="shuvin">黑色<i class="icon iconfont icon-youjiantou"></i></span></p>
+			<p class="weibotime">上牌日期<span class="shuvin otcol"><input name="" id="demo1" placeholder="请选择"/><i class="icon iconfont icon-youjiantou"></i></span></p>
+			<p class="weibotime">行驶里程<span class="shuvins"><input type="text" placeholder="请输入公里数"/>万公里</span></p>
+			<p class="weibotime">变速箱<span class="shuvins"><small class="checked">自动</small><small>手动</small><small>手自一体</small></span></p>
+			<p class="weibotime">变速箱<span class="shuvins"><small class="checked">非营运</small><small>营转非</small></span></p>
+		</div>
+		<script>
+			var calendar = new datePicker();
+		calendar.init({
+			'trigger': '#demo1', /*按钮选择器，用于触发弹出插件*/
+			'type': 'date',/*模式：date日期；datetime日期时间；time时间；ym年月；*/
+			'minDate':'1900-1-1',/*最小日期*/
+			'maxDate':'2100-12-31',/*最大日期*/
+			'onSubmit':function(){/*确认时触发事件*/
+				var theSelectData=calendar.value;
+			},
+			'onClose':function(){/*取消时触发事件*/
+			}
+		});
+		</script>
+		<script type="text/javascript">
+		$(function(){
+			$(".shuvins small").click(function(){
+				$(this).addClass("checked").siblings().removeClass("checked");
+			})
+		})
+		</script>
+	</div>
+	<div class="qiutit">车况信息</div>
+	<div class="chekuang">
+		<p class="chektit">请选择相应颜色后点击于车辆剖面图上</p>
+		<img src="images/images/facart_03.jpg" width="100%"/>
+		<p class="chektit">车况描述</p>
+		<textarea placeholder="请输入车况描述" rows="" cols=""></textarea>
+	</div>
+	<div class="qiutit">销售信息</div>
+	<div class="waijian faxian">
+			<p class="weibotime">最低售价<span class="shuvins"><input type="text" placeholder="请输入价格"/>万元</span></p>
+			<p class="weibotime">所属市场<span class="shuvin otcol">请选择<i class="icon iconfont icon-youjiantou"></i></span></p>
+	</div>
+	<div class="hehight"></div>
+	<div class="xfabu"><a>立即发车</a></div>
+</section>
+</body>
+</html>

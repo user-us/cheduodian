@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="toTop" content="true">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <link rel="stylesheet" type="text/css" href="css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="font/demo.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+    <div class="index_nav">
+        <div class="container">
+            <div class="city">
+                <span>北京</span>
+                <i class="icon iconfont icon-jiantou"></i>
+            </div>
+            <div class="message"><i class="icon iconfont icon-youjian"></i><label>18</label></div>
+        </div>
+    </div>
+    <div class="index_content">
+        <div class="banner"><img src="images/index_banner.png"><div class="user"><label>34554</label>位用户<br>已使用车多的购车服务</div></div>
+        <div class="menu_container">
+            <div class="index_search">
+                <i class="icon iconfont icon-sousuo"></i>
+                <input type="text" name="" placeholder="搜索品牌/车型/年款">
+            </div>
+            <div class="menu_list">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="menu_img"><img src="images/bscy.png"></div>
+                            <p class="menu_text">本市车源</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="menu_img"><img src="images/cyfb.png"></div>
+                            <p class="menu_text">车源发布</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="menu_img"><img src="images/dkqg.png"></div>
+                            <p class="menu_text">代客求购</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="menu_img"><img src="images/wbcx.png"></div>
+                            <p class="menu_text">维保查询</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="menu_img"><img src="images/hdzx.png"></div>
+                            <p class="menu_text">活动中心</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="menu_img"><img src="images/bbfq.png"></div>
+                            <p class="menu_text">帮客户办分期</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="index_swiper">
+            <div class="swiper-container swiper-index">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href=""><img src="images/lbt1.png"></a></div>
+                    <div class="swiper-slide"><a href=""><img src="images/lbt1.png"></a></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footerx">
+        	<dl>
+        		<a href="">
+	        		<div class="dldt"><i class="icon iconfont icon-qiche"></i></div>
+	        		<dd>首页</dd>
+            	</a>
+        	</dl>
+			<dl>
+        		<a href="">
+	        		<div class="dldt"><i class="icon iconfont icon-qiche"></i></div>
+	        		<dd>首页</dd>
+            	</a>
+        	</dl>
+        </div>
+    </div>
+    <div class="index_mask">
+        <div class="des"><img src="images/index_popup.png"><p class="p1">每天使用车商内网，免费获得”多币免费查维保</p><p class="p2">活动时间：长期有效</p></div>
+        <div class="index_close"></div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/swiper.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var swiper = new Swiper('.swiper-index', {
+                loop:true,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+        })
+        
+    </script>
+</body>
+</html>

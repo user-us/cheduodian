@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="toTop" content="true">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="font/demo.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<section id="register_box">
+	<div class="header1"><i class="icon iconfont icon-zuojiantou daileft"></i>活动中心</div>
+	<div class="hehight"></div>
+	<div class="fuche">
+		<p class="fachebi">
+			<span class="faspan1">发布车源得车币！</span>
+			<span class="chenum">9/10</span>
+			<img src="images/tishi1.png" class="tishi1"/>
+			<span class="weiwan yiwan1">未完成</span>
+		</p>
+		<p class="duofade">每发布一台车且发布成功可得1多币！</p>
+		<p class="yifade">今日已发10车！<span class="yides">已得<span>30</span>多币</span></p>
+	</div>
+	<div class="fuche">
+		<p class="fachebi">
+			<span class="faspan1">发布车源得车币！</span>
+			<span class="chenum">9/10</span>
+			<img src="images/tishi1.png" class="tishi1"/>
+			<span class="weiwan yiwan2">未完成</span>
+		</p>
+		<p class="duofade">每发布一台车且发布成功可得1多币！</p>
+		<p class="yifade">今日已发10车！<span class="yides">已得<span>30</span>多币</span></p>
+	</div>
+	<!--弹出-->
+	<div class="half"></div>
+  	<div class="dialog">
+	    <p class="tantit1">提示<i class="icon iconfont icon-cuowu guanbi"></i></p>
+	    <p class="tancon1">每日发车得多币，最多可得10多币！  </p>
+	    <p class="putong"><a>知道了</a></p>
+  	</div>
+   <script type="text/javascript">
+	$(function(){
+		  $(".tishi1").click(function(){
+	      $(".dialog").show();
+		  $(".half").show().css("height",$(document).height());	 
+	      })   
+	      $(".guanbi").click(function(){$(".dialog").hide();$(".half").hide();}); 
+	      $(".putong").click(function(){$(".dialog").hide();$(".half").hide();});  
+	})
+	</script>
+	<!--弹出-->
+</section>
+</body>
+</html>

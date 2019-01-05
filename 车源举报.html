@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="toTop" content="true">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="font/demo.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<section id="register_box">
+	<div class="header1"><i class="icon iconfont icon-zuojiantou daileft"></i>车源举报</div>
+	<div class="hehight"></div>
+	<div class="qiutit">车辆状况</div>
+	<div class="jubaocar">
+		<div class="chejubao">
+			<label>真实性:</label><p class="qingkuang"><span class="checked">已售</span><span>虚假</span><span>无问题</span></p>
+		</div>
+		<div class="chejubao">
+			<label>车况描述:</label><p class="qingkuang"><span>不准确</span><span class="checked">正常</span><span>虚假</span></p>
+		</div>
+		<div class="chejubao">
+			<label>价格:</label><p class="qingkuang"><span>偏高</span><span class="checked">正常</span><span>偏低</span></p>
+		</div>
+		<div class="chejubao">
+			<label>其他:</label><p class="qingkuang"><textarea placeholder="请描述举报原因"></textarea></p>
+		</div>
+	</div>
+	<div class="hehight"></div>
+	<div class="xfabu"><span class="shouig">取消</span><span class="shouig">提交</span></div>
+	<script type="text/javascript">
+	$(function(){
+		$(".qingkuang span").click(function(){
+			$(this).addClass("checked").siblings().removeClass("checked");
+		})
+	})
+	</script>
+	
+
+</section>
+</body>
+</html>

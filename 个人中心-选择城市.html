@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="toTop" content="true">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="font/demo.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+	<div class="personal_topbar">
+		<div class="container">
+			<div class="left_arrow">
+				<img src="images/left_arrow.png">
+			</div>
+			<div class="title">选择城市</div>
+			<div class="right_arrow"></div>
+		</div>
+	</div>
+	<div class="choice_page_wrapper">
+		<div class="letters_order_list">
+			<div class="item">
+				<div class="letter">A</div>
+				<div class="list_wrapper">
+					<ul class="list">
+						<li class="choice_item">安徽</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<div class="letter">B</div>
+				<div class="list_wrapper">
+					<ul class="list">
+						<li class="choice_item">北京</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<div class="letter">G</div>
+				<div class="list_wrapper">
+					<ul class="list">
+						<li class="choice_item">甘肃</li>
+						<li class="choice_item">广东</li>
+						<li class="choice_item">广西</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="letters_list">
+			<a href="#sectionA">A</a>
+			<a href="#sectionB">B</a>
+			<a href="#sectionC">C</a>
+			<a href="#sectionD">D</a>
+			<a href="#sectionE">E</a>
+			<a href="#sectionF">F</a>
+			<a href="#sectionG">G</a>
+			<a href="#sectionH">H</a>
+			<a href="#sectionJ">J</a>
+			<a href="#sectionK">K</a>
+			<a href="#sectionL">L</a>
+			<a href="#sectionM">M</a>
+			<a href="#sectionN">N</a>
+			<a href="#sectionO">O</a>
+			<a href="#sectionP">P</a>
+			<a href="#sectionQ">Q</a>
+			<a href="#sectionR">R</a>
+			<a href="#sectionS">S</a>
+			<a href="#sectionT">T</a>
+			<a href="#sectionW">W</a>
+			<a href="#sectionX">X</a>
+			<a href="#sectionY">Y</a>
+			<a href="#sectionZ">Z</a>
+		</div>
+		<div class="choice_sub_list">
+		    <div class="choice_sub_list_c">
+				<div class="sheng">安微</div>
+				<div class="choice_sub_item active">
+					<span class="radioDefault"></span>
+					<span class="text">全省</span>
+				</div>
+				<div class="kongxi"></div>
+				<div class="sub_list_wrapper">
+					<ul class="sub_list">
+						<li class="choice_sub_item">
+							<span class="radioDefault"></span>
+						    <span class="text">安庆</span>
+						</li>
+						<li class="choice_sub_item">
+							<span class="radioDefault"></span>
+						    <span class="text">安庆</span>
+						</li>
+						<li class="choice_sub_item">
+							<span class="radioDefault"></span>
+						    <span class="text">安庆</span>
+						</li>
+						<li class="choice_sub_item">
+							<span class="radioDefault"></span>
+						    <span class="text">安庆</span>
+						</li>
+						<li class="choice_sub_item">
+							<span class="radioDefault"></span>
+						    <span class="text">安庆</span>
+						</li>
+						<li class="choice_sub_item">
+							<span class="radioDefault"></span>
+						    <span class="text">安庆</span>
+						</li>
+						<li class="choice_sub_item">
+							<span class="radioDefault"></span>
+						    <span class="text">安庆</span>
+						</li>
+						<li class="choice_sub_item">
+							<span class="radioDefault"></span>
+						    <span class="text">安庆</span>
+						</li>
+						<li class="choice_sub_item">
+							<span class="radioDefault"></span>
+						    <span class="text">安庆</span>
+						</li>
+						<li class="choice_sub_item">
+							<span class="radioDefault"></span>
+						    <span class="text">安庆</span>
+						</li>
+						<li class="choice_sub_item">
+							<span class="radioDefault"></span>
+						    <span class="text">安庆</span>
+						</li>
+						<li class="choice_sub_item">
+							<span class="radioDefault"></span>
+						    <span class="text">安庆</span>
+						</li>
+					</ul>
+				</div>
+				<div class="btn_container">
+					<div class="choice_cancel">取消选择</div>
+					<div class="choice_choice">确定</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".choice_item").click(function(){
+				var text = $(this).text();
+				$(".choice_sub_list").show();
+				$(".choice_sub_list").find(".sheng").text(text);
+				$(".choice_sub_list").stop().animate({"width":"6.75rem"},200);
+			});
+			$(".choice_cancel").click(function(){
+				$(".choice_sub_list").stop().animate({"width":"0"},200,function(){
+					$(".choice_sub_list").hide();
+				});
+			});
+			$(".choice_sub_item").click(function(){
+				$(".choice_sub_item").removeClass("active");
+				$(this).addClass("active");
+			})
+		})
+	</script>
+</body>
+</html>
